@@ -1,10 +1,5 @@
 'use strict';
 
-// const supertest = require('supertest'); 
-// const test = require('unit.js');
-// const app = require('../server.js');
-
-
 //convert requires to imports
 import supertest from 'supertest';
 import test from 'unit.js';

@@ -2,10 +2,10 @@
 import express from 'express';
 import path from 'path';
 import cors from "cors";
-import "./loadEnvironment.mjs";
-import "express-async-errors";
-import posts from "./routes/posts.mjs";
-import db from "./db/conn.mjs";
+//import "./loadEnvironment.mjs";
+//import "express-async-errors";
+//import posts from "./routes/posts.mjs";
+//import db from "./db/conn.mjs";
 
 
 var port = process.env.PORT || 3000;
@@ -21,7 +21,7 @@ app.get('/hello', function(req, res) {
 });
 
 
-app.get('/posts', posts);
+//app.get('/posts', posts);
 
 app.listen(port);
 
