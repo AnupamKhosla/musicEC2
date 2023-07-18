@@ -1,10 +1,17 @@
 'use strict';
 
-const supertest = require('supertest'); 
-const test = require('unit.js');
-const app = require('../app.js');
+// const supertest = require('supertest'); 
+// const test = require('unit.js');
+// const app = require('../server.js');
 
-const request = supertest(app);
+
+//convert requires to imports
+import supertest from 'supertest';
+import test from 'unit.js';
+import app from '../server.js';
+
+console.log(process.env);
+throw new Error("Test Error");
 
 describe('Tests app', function() {
   it('verifies get', function(done) {
