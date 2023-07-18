@@ -5,7 +5,7 @@ import cors from "cors";
 import "./loadEnvironment.mjs";
 //import "express-async-errors";
 //import posts from "./routes/posts.mjs";
-import db from "./db/conn.mjs";
+//import db from "./db/conn.mjs";
 //console.log(db);
 //throw new Error("Test Error");
 
@@ -18,7 +18,7 @@ app.use(express.static(productionDir));
 
 
 app.get('/hello', function(req, res) {
-  res.send('Hello World');
+  res.send(process.env.PORT + " -- " + process.env.ATLAS_URI);
 });
 
 
