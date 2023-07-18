@@ -6,8 +6,8 @@ import "./loadEnvironment.mjs";
 //import "express-async-errors";
 //import posts from "./routes/posts.mjs";
 import db from "./db/conn.mjs";
-console.log(db);
-throw new Error("Test Error");
+//console.log(db);
+//throw new Error("Test Error");
 
 var port = process.env.PORT || 3000;
 var app = express();
