@@ -11,7 +11,7 @@ import test from 'unit.js';
 import app from '../app.js';
 
 console.log(process.env);
-throw new Error("Test Error");
+//throw new Error("Test Error");
 
 describe('Tests app', function() {
   it('verifies get', function(done) {
