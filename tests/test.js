@@ -13,6 +13,8 @@ import app from '../app.js';
 console.log(process.env);
 //throw new Error("Test Error");
 
+
+const request = supertest(app);
 describe('Tests app', function() {
   it('verifies get', function(done) {
     request.get('/').expect(200).end(function(err, result) {
