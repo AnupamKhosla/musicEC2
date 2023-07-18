@@ -8,7 +8,7 @@
 //convert requires to imports
 import supertest from 'supertest';
 import test from 'unit.js';
-import app from '../server.js';
+import app from '../app.js';
 
 console.log(process.env);
 throw new Error("Test Error");
