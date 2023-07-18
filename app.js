@@ -1,20 +1,29 @@
-//import
+"use strict";
 import express from 'express';
 import path from 'path';
+import cors from "cors";
+import "./loadEnvironment.mjs";
+import "express-async-errors";
+import posts from "./routes/posts.mjs";
+import db from "./db/conn.mjs";
 
 
-
-//var express = require('express');
 var port = process.env.PORT || 3000;
-var app = express(),
-//path = require('path'),
-productionDir = path.join(path.resolve(),'public');
-//publicDir = path.join(__dirname,'public');
-
+var app = express();
+app.use(cors());
+var productionDir = path.join(path.resolve(),'public');
 app.use(express.static(productionDir));
+
+
+
+app.get('/hello', function(req, res) {
+  res.send('Hello World');
+});
+
+
+app.get('/posts', posts);
 
 app.listen(port);
 
-//module.exports = app;
-//export
 export default app;
+

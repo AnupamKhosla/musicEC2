@@ -10,7 +10,7 @@ import supertest from 'supertest';
 import test from 'unit.js';
 import app from '../app.js';
 
-console.log(process.env);
+//console.log(process.env);
 //throw new Error("Test Error");
 
 
