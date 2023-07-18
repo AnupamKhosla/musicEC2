@@ -5,7 +5,7 @@ import path from 'path';
 
 
 //var express = require('express');
-var port = process.env.PORT || 5050;
+var port = process.env.PORT || 3000;
 var app = express(),
 //path = require('path'),
 productionDir = path.join(path.resolve(),'public');
