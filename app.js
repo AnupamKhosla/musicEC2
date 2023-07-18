@@ -1,10 +1,20 @@
-var express = require('express');
-var port = process.env.PORT || 3000;
-var app = express(),
-path = require('path'),
-publicDir = path.join(__dirname,'public');
+//import
+import express from 'express';
+import path from 'path';
 
-app.use(express.static(publicDir))
+
+
+//var express = require('express');
+var port = process.env.PORT || 5050;
+var app = express(),
+//path = require('path'),
+productionDir = path.join(path.resolve(),'public');
+//publicDir = path.join(__dirname,'public');
+
+app.use(express.static(productionDir));
 
 app.listen(port);
-module.exports = app;
+
+//module.exports = app;
+//export
+export default app;
