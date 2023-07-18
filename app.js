@@ -15,10 +15,10 @@ app.use(cors());
 var productionDir = path.join(path.resolve(),'public');
 app.use(express.static(productionDir));
 
-
+var db_password = process.env.ATLAS_URI || "ATLAS_URI_IS_UNDEFINED";
 
 app.get('/hello', function(req, res) {
-  res.send(process.env.PORT + " -- " + process.env.ATLAS_URI);
+  res.send(process.env.ATLAS_URI);
 });
 
 
