@@ -9,8 +9,8 @@ phases:
       - npm install
 
       # Upgrade AWS CLI to the latest version
-      # - pip3 install --upgrade awscli
-      # IMPORTANT: Temporarily commenting out above update to skip pipeline error
+      - pip3 install --upgrade awscli
+      # IMPORTANT: Temporarily comment out above update to skip pipeline error https://github.com/aws/aws-cli/issues/8036#issuecomment-1639136091
   pre_build:
     commands:
       # Discover and run unit tests in the 'tests' directory
