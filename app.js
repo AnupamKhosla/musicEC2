@@ -18,7 +18,7 @@ app.use(express.static(productionDir));
 var db_password = process.env.ATLAS_URI || "ATLAS_URI_IS_UNDEFINED";
 
 app.get('/hello', function(req, res) {
-  res.send(process.env.ATLAS_URI);
+  res.send(db_password;
 });
 
 
