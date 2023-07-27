@@ -2,10 +2,10 @@
 import express from 'express';
 import path from 'path';
 import cors from "cors";
-//import "./loadEnvironment.mjs";
-//import "express-async-errors";
-//import posts from "./routes/posts.mjs";
-//import db from "./db/conn.mjs";
+import "./loadEnvironment.mjs";
+import "express-async-errors";
+import posts from "./routes/posts.mjs";
+import db from "./db/conn.mjs";
 //console.log(db);
 //throw new Error("Test Error");
 
