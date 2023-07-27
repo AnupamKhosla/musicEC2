@@ -21,6 +21,10 @@ app.get('/hello', function(req, res) {
   res.send(db_password);
 });
 
+app.get('/test', function(req, res) {
+  res.send("test");
+});
+
 
 //app.get('/posts', posts);
 
